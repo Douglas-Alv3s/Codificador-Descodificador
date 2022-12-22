@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.estilo-pagina {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: #F3F5FC;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.parte-esquerda {
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+.cabecalho-esquerdo {
+    position: relative;
+    width: 100%;
+}
+
+.principal-esquerdo {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.texto-esquerdo {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.textarea-texto{
+    margin: 0 auto;
+    background: #F3F5FC;
+    width: 70%;
+    height: 350px; 
+    resize: none;
+    border: none;
+    color: #0A3871;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.textarea-texto::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.inferior-esquerdo {
+    width: 70%;
+    margin: 2em auto;
+
+}
+
+.texto-aviso{
+    background-image: url(/IMG/icon-note.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 30px;
+}
+
+.div-boton-esquerdo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1em;
+    width: 230px;
+    height: 3em;
+    border: 1px solid #0A3871;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.botao:hover{
+    
+}
+
+.parte-direita {
+    width: 27%;
+    height: 100%;
+    background: white;
+    border-radius: 24px;
+    padding: 34px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+.parte-direita div img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.parte-direita div h1{
+    padding: 1.5em 0 1em 0;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #343A40;
+}
+
+.parte-direita div p{
+    font-size: 0.85em;
+    color: #495057;
+    line-height: 150%;
+    text-align: center;
+}
+
