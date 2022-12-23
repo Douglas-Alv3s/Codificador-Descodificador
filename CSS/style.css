@@ -21,13 +21,14 @@ html, body{
 }
 
 .parte-esquerda {
-    /* border: 1px solid red; */
     width: 80%;
 }
 
 .cabecalho-esquerdo {
     position: relative;
     width: 100%;
+    /* border: 1px solid red; */
+
 }
 
 .principal-esquerdo {
@@ -47,18 +48,25 @@ html, body{
     margin: 0 auto;
     background: #F3F5FC;
     width: 70%;
-    height: 350px; 
+    height: 433.5px; 
     resize: none;
     border: none;
     color: #0A3871;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 32px;
+    margin-top: 40px;
+    text-align: justify;
+    /* border:1px solid black; */
 }
 
 .textarea-texto::placeholder {
     color: #0A3871;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 30px;
+}
+
+.textarea-texto:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .inferior-esquerdo {
@@ -69,29 +77,44 @@ html, body{
 
 .texto-aviso{
     background-image: url(/IMG/icon-note.svg);
+    background-size: 12px;
     background-repeat: no-repeat;
-    background-position: 10px;
+    background-position: 16px;
     padding-left: 30px;
+    font-size: 12px;
 }
 
 .div-boton-esquerdo {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .botao {
     font-size: 16px;
     text-align: center;
     margin-top: 1em;
-    width: 230px;
-    height: 3em;
+    width: 278px;
+    height: 3.5em;
     border: 1px solid #0A3871;
     border-radius: 1em;
     cursor: pointer;
+    transition: 0.5s;
+    color: #0A3871;
+    background: #D8DFE8;
 }
 
 .botao:hover{
-    
+    background: #cdd7fe;
+}
+
+.botao-codificador{
+    background: #0A3871;
+    color: white;
+}
+
+.botao-codificador:hover{
+    background: #032957;
 }
 
 .parte-direita {
@@ -103,8 +126,8 @@ html, body{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    
-
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -127,5 +150,12 @@ html, body{
     color: #495057;
     line-height: 150%;
     text-align: center;
+}
+
+.botao-copiar{
+    position: absolute;
+    bottom: 34px;
+    right: 46px;
+    background: none;
 }
 
