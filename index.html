@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="/CSS/reset.css">
         <link rel="stylesheet" href="/CSS/style.css">
+        <script src="/JS/codificador-decodificador.js"></script>
 
     </head>
 
@@ -24,7 +25,7 @@
                 <section>
                     <div class="principal-esquerdo">
                         <div class="texto-esquerdo">
-                            <textarea  class="textarea-texto" required placeholder="Digite seu texto"></textarea>
+                            <textarea  class="textarea-texto" required placeholder="Digite seu texto" id="textoEscrito"></textarea>
                         </div>
 
                         <div class="inferior-esquerdo">
@@ -32,22 +33,22 @@
                                 <p>Apenas letras minúsculas e sem acento.</p>
                             </div>
                             <div class="div-boton-esquerdo">
-                                <button class="botao botao-codificador">Codificador</button>
-                                <button class="botao">Decodificador</button>
+                                <button class="botao botao-codificador" id="codificador" onclick="codifica()">Codificador</button>
+                                <button class="botao" id="decodificador" onclick="decodifica()">Decodificador</button>
                             </div>
                         </div>
                     </div>
                 </section>
             </section>
 
-            <section class="parte-direita">
+            <section class="parte-direita" id="textoResultado">
                 <div>
                     <img src="/IMG/img-no-msg.svg">
                     <h1>Nenhuma mensagem encontrada</h1>
                     <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                     <p class="texto-resultado"></p>
                     <div>
-                        <button class="botao botao-copiar">Copiar</button>
+                        <button class="botao botao-copiar" id="copiador" onclick="copiar()">Copiar</button>
                     </div>
                 </div>
             </section>
