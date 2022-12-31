@@ -1,6 +1,24 @@
+function ativarResultado() {  
+    var parteDireita = document.querySelector(".parte-direita");
+    parteDireita.style.display = 'block';
+
+    var conteudoResultado = document.querySelector('.conteudo-direito');
+    conteudoResultado.style.display = 'none';
+
+    var botaoDireito = document.querySelector(".botao-copiar");
+    botaoDireito.style.display = 'block';
+
+    var resultadoTextarea = document.querySelector(".textarea-resultado");
+    resultadoTextarea.style.display = 'block';
+
+    var xesqueNeles = document.querySelector(".xesque-direito");
+    xesqueNeles.style.height = "85%";
+}
+
 function codifica() {
-    var texto = document.getElementById("textoEscrito").value;
-    var resultado = document.getElementById("textoResultado");
+    ativarResultado();
+    var texto = document.querySelector(".textarea-texto").value;
+    var resultado = document.querySelector(".texto-resultado");
 
     texto = texto.replaceAll("e","enter");
     texto = texto.replaceAll("i","imes");
@@ -8,12 +26,14 @@ function codifica() {
     texto = texto.replaceAll("o","ober");
     texto = texto.replaceAll("u","ufat");
     
-    resultado.innerHTML = texto;
+    resultado.value = texto;
+
 }
 
 function decodifica() {
-    var texto = document.getElementById("textoEscrito").value;
-    var resultado = document.getElementById("textoResultado");
+    ativarResultado();
+    var texto = document.querySelector(".textarea-texto").value;
+    var resultado = document.querySelector(".texto-resultado");
 
     texto = texto.replaceAll("ufat","u");
     texto = texto.replaceAll("ober","o");
@@ -21,9 +41,15 @@ function decodifica() {
     texto = texto.replaceAll("imes","i");
     texto = texto.replaceAll("enter","e");
  
-    resultado.innerHTML = texto;
+    resultado.value = texto;
 }
 
 function copiar() {
-    alert("Copiando");
+    var textoCopiado = document.querySelector(".texto-resultado");
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999999)
+    navigator.clipboard.writeText(textoCopiado.value);
+    alert(textoCopiado.value);
+
 }
+

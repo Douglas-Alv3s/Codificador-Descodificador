@@ -17,6 +17,8 @@ html, body{
     background: #F3F5FC;
     display: flex;
     justify-content: space-between;
+    border:1px solid black;
+
  
 }
 
@@ -27,13 +29,13 @@ html, body{
 .cabecalho-esquerdo {
     position: relative;
     width: 100%;
-    /* border: 1px solid red; */
 
 }
 
 .principal-esquerdo {
     width: 80%;
     margin: 0 auto;
+    /* border: 1px solid red; */
     
 }
 
@@ -56,7 +58,6 @@ html, body{
     line-height: 32px;
     margin-top: 40px;
     text-align: justify;
-    /* border:1px solid black; */
 }
 
 .textarea-texto::placeholder {
@@ -127,16 +128,22 @@ html, body{
     display: flex;
     align-items: center;
     position: relative;
+    flex-wrap: wrap;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.xesque-direito {
+    width: 100%;
+    height: fit-content;
+    
+}
 
-.parte-direita div img{
+.conteudo-direito img{
     margin: 0 auto;
     width: 100%;
 }
 
-.parte-direita div h1{
+.conteudo-direito h1{
     padding: 1.5em 0 1em 0;
     line-height: 150%;
     text-align: center;
@@ -145,17 +152,107 @@ html, body{
     color: #343A40;
 }
 
-.parte-direita div p{
+.conteudo-direito p{
     font-size: 0.85em;
     color: #495057;
     line-height: 150%;
     text-align: center;
 }
 
-.botao-copiar{
-    position: absolute;
-    bottom: 34px;
-    right: 46px;
-    background: none;
+.parte-direita-botao {
+    width: 100%;
+    height: auto;
 }
 
+.botao-copiar{
+    display: none;
+    position: relative;
+    background: none;
+    width: 100%;
+}
+
+.textarea-resultado {
+    display: none;
+    width: 100%;    
+    height: 100%;
+    background: #cdd7fe;
+    
+}
+
+.texto-resultado {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline:none;
+    padding: 0;
+    color: #495057;
+    font-size: 1.35em;
+    line-height: 29px;
+    
+}
+
+
+/* Parte Responsiva, deixe responsivo */
+
+@media screen and (max-width: 820px) {
+    .estilo-pagina {
+        display: block;
+        padding: 20px;
+        height: auto;
+    }
+
+    .parte-esquerda {
+        width: 100%;
+    }
+
+    .principal-esquerdo {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .textarea-texto {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .inferior-esquerdo {
+        width: 100%;
+
+    }
+
+    .div-boton-esquerdo {
+        display: block;
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        height: 75px;
+        border-radius: 1.7em;
+    }
+
+    .parte-direita {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-direita {
+        display: none;
+        
+    }
+
+    .textarea-resultado{
+        width: 100%;
+        height: 400px;
+    }
+
+    
+    .parte-direita-botao {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid blue; */
+    }
+
+    
+}
