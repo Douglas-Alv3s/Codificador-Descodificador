@@ -17,7 +17,6 @@ html, body{
     background: #F3F5FC;
     display: flex;
     justify-content: space-between;
-    /* border:1px solid black; */
 
  
 }
@@ -27,36 +26,44 @@ html, body{
     height: 100%;
     display: block;
     /* border: 1px solid blueviolet; */
+
 }
 
 .cabecalho-esquerdo {
     position: relative;
     width: 100%;
+    /* border:1px solid black; */
     
+}
+
+.xesque-esquerdo {
+    height: 94%;
 }
 
 .principal-esquerdo {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    display: absolute;
-
+    /* display: flex; */
     /* border: 1px solid red; */
     /* border: 1px solid rgb(43, 226, 67); */
+    flex-grow: 1;
 }
 
 .texto-esquerdo {
     width: 100%;
+    height: 80%; 
     display: flex;
     align-items: center; 
     /* border: 1px solid rgb(226, 205, 43); */
 }
 
+
 .textarea-texto{
     margin: 0 auto;
     background: #F3F5FC;
     width: 70%;
-    height: 433.5px; 
+    height: 80%; 
     resize: none;
     border: none;
     color: #0A3871;
@@ -83,7 +90,7 @@ html, body{
 }
 
 .texto-aviso{
-    background-image: url(IMG/icon-note.svg);
+    background-image: url(../IMG/icon-note.svg);
     background-size: 12px;
     background-repeat: no-repeat;
     background-position: 16px;
@@ -126,7 +133,7 @@ html, body{
 
 .parte-direita {
     width: 27%;
-    /* height: 100%; */
+    height: 100%;
     background: white;
     border-radius: 24px;
     padding: 34px;
@@ -140,7 +147,7 @@ html, body{
 }
 
 .xesque-direito {
-    /* width: 100%; */
+    width: 100%;
     height: fit-content;
     
 }
@@ -200,7 +207,7 @@ html, body{
     
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .estilo-pagina {
         display: block;
         padding: 50px;
