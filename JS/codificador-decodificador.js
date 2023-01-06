@@ -13,7 +13,16 @@ function ativarResultado() {
 
     var xesqueNeles = document.querySelector(".xesque-direito");
     xesqueNeles.style.height = "85%";
+
 }
+
+function textareaResult(){
+    if (window.innerWidth <= 1280){
+        var myText = document.getElementById("my-text");
+        myText.style.height = myText.scrollHeight+"px";
+    } 
+}
+
 
 function codifica() {
     ativarResultado();
@@ -27,7 +36,7 @@ function codifica() {
     texto = texto.replaceAll("u","ufat");
     
     resultado.value = texto;
-
+    textareaResult();
 }
 
 function decodifica() {
@@ -42,6 +51,8 @@ function decodifica() {
     texto = texto.replaceAll("enter","e");
  
     resultado.value = texto;
+    textareaResult();
+
 }
 
 function copiar() {

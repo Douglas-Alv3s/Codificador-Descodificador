@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Alura</title>
 
-        <link rel="stylesheet" href="/CSS/reset.css">
-        <link rel="stylesheet" href="/CSS/style.css">
-        <script src="/JS/codificador-decodificador.js"></script>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JS/codificador-decodificador.js"></script>
 
     </head>
 
@@ -18,14 +18,14 @@
             <section class="parte-esquerda">
                 <header>
                     <div class="cabecalho-esquerdo">
-                        <img src="/IMG/alura-logo.svg" class="imagem-logo">
+                        <img src="IMG/alura-logo.svg" class="imagem-logo">
                     </div>
                 </header>
 
                 <section>
                     <div class="principal-esquerdo">
                         <div class="texto-esquerdo">
-                            <textarea  class="textarea-texto" placeholder="Digite seu texto"></textarea>
+                            <textarea  class="textarea-texto" placeholder="Digite seu texto..."></textarea>
                         </div>
 
                         <div class="inferior-esquerdo">
@@ -44,21 +44,12 @@
             <section class="parte-direita" >
                 <div class="xesque-direito">
                     <div class="conteudo-direito">
-                        <img src="/IMG/img-no-msg.svg" class="imagem-direita">
+                        <img src="IMG/img-no-msg.svg" class="imagem-direita">
                         <h1>Nenhuma mensagem encontrada</h1>
                         <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
                     </div>
                     <div class="textarea-resultado">    
                         <textarea class="texto-resultado" id="my-text" readonly ></textarea>
-                        <script>
-                            // const myText = document.getElementById("my-text");
-                            // myText.style.cssText = `height: ${myText.scrollHeight}px; overflow-y: hidden`;
-
-                            // myText.addEventListener("input", function(){
-                            //     this.style.height = "auto";
-                            //     this.style.height = `${this.scrollHeight}px`;
-                            // })
-                        </script>
                     </div>
                     <div class="parte-direita-botao">
                         <button class="botao botao-copiar" id="copiador" onclick="copiar()">Copiar</button>

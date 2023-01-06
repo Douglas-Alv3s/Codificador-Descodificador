@@ -17,33 +17,39 @@ html, body{
     background: #F3F5FC;
     display: flex;
     justify-content: space-between;
-    border:1px solid black;
+    /* border:1px solid black; */
 
  
 }
 
 .parte-esquerda {
     width: 80%;
+    height: 100%;
+    display: block;
+    /* border: 1px solid blueviolet; */
 }
 
 .cabecalho-esquerdo {
     position: relative;
     width: 100%;
-
+    
 }
 
 .principal-esquerdo {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
+    display: absolute;
+
     /* border: 1px solid red; */
-    
+    /* border: 1px solid rgb(43, 226, 67); */
 }
 
 .texto-esquerdo {
     width: 100%;
     display: flex;
     align-items: center; 
-    
+    /* border: 1px solid rgb(226, 205, 43); */
 }
 
 .textarea-texto{
@@ -77,7 +83,7 @@ html, body{
 }
 
 .texto-aviso{
-    background-image: url(/IMG/icon-note.svg);
+    background-image: url(IMG/icon-note.svg);
     background-size: 12px;
     background-repeat: no-repeat;
     background-position: 16px;
@@ -120,7 +126,7 @@ html, body{
 
 .parte-direita {
     width: 27%;
-    height: 100%;
+    /* height: 100%; */
     background: white;
     border-radius: 24px;
     padding: 34px;
@@ -130,10 +136,11 @@ html, body{
     position: relative;
     flex-wrap: wrap;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rgb(250, 11, 11) */
 }
 
 .xesque-direito {
-    width: 100%;
+    /* width: 100%; */
     height: fit-content;
     
 }
@@ -189,13 +196,58 @@ html, body{
     color: #495057;
     font-size: 1.35em;
     line-height: 29px;
+    background: white;
     
+}
+
+@media screen and (max-width: 1280px) {
+    .estilo-pagina {
+        display: block;
+        padding: 50px;
+        height: auto;
+        background: #5ea4fa;
+    }
+
+    .parte-esquerda {
+        width: 100%;
+    }
+
+    .principal-esquerdo {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .textarea-texto {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .inferior-esquerdo {
+        width: 100%;
+
+    }
+
+    .parte-direita {
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .imagem-direita {
+        display: none;
+        
+    }
+
+    .textarea-resultado{
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 /* Parte Responsiva, deixe responsivo */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 767px) {
     .estilo-pagina {
         display: block;
         padding: 20px;
@@ -244,7 +296,7 @@ html, body{
 
     .textarea-resultado{
         width: 100%;
-        height: 400px;
+        height: auto;
     }
 
     
