@@ -6,6 +6,8 @@
 
 html, body{
     height: 100%;
+    background: #F3F5FC;
+
 }
 
 
@@ -14,7 +16,6 @@ html, body{
     width: 100%;
     height: 100%;
     padding: 40px;
-    background: #F3F5FC;
     display: flex;
     justify-content: space-between;
 
@@ -25,14 +26,12 @@ html, body{
     width: 80%;
     height: 100%;
     display: block;
-    /* border: 1px solid blueviolet; */
 
 }
 
 .cabecalho-esquerdo {
     position: relative;
     width: 100%;
-    /* border:1px solid black; */
     
 }
 
@@ -44,8 +43,6 @@ html, body{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    /* display: flex; */
-    border: 1px solid rgb(43, 226, 67);
     flex-grow: 1;
 }
 
@@ -54,9 +51,7 @@ html, body{
     height: 80%; 
     display: flex;
     align-items: center; 
-    border: 1px solid rgb(226, 205, 43);
 }
-
 
 .textarea-texto{
     margin: 0 auto;
@@ -64,21 +59,25 @@ html, body{
     width: 70%;
     height: 80%; 
     resize: none;
-    border: none;
+    border: 2px solid #0A3871;
     color: #0A3871;
     font-size: 30px;
     line-height: 32px;
     margin-top: 40px;
     text-align: justify;
+    border-radius: 12px;
+    transition: all 0.5s;
 }
 
 .textarea-texto::placeholder {
     color: #0A3871;
     font-size: 30px;
+
 }
 
 .textarea-texto:focus{
-    box-shadow: 0 0 0 0;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 1, 0.316);
     outline: 0;
 }
 
@@ -108,7 +107,7 @@ html, body{
 .botao {
     font-size: 20px;
     text-align: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
     width: 300px;
     height: 3.5em;
     border: 1px solid #0A3871;
@@ -214,26 +213,34 @@ html, body{
         display: block;
         padding: 50px;
         height: auto;
-        background: #5ea4fa;
     }
 
     .parte-esquerda {
         width: 100%;
+        
     }
 
     .principal-esquerdo {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .textarea-texto {
         width: 100%;
-        height: 300px;
+        height: 580px;
     }
     
     .inferior-esquerdo {
         width: 100%;
+        margin-top: 1em;
+    }
 
+    .texto-aviso {
+        background-position: 6%;
+    }
+
+    .texto-aviso p {
+        margin-left: 4%;
     }
 
     .parte-direita {
