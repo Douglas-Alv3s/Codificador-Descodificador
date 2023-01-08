@@ -45,8 +45,7 @@ html, body{
     height: 100%;
     margin: 0 auto;
     /* display: flex; */
-    /* border: 1px solid red; */
-    /* border: 1px solid rgb(43, 226, 67); */
+    border: 1px solid rgb(43, 226, 67);
     flex-grow: 1;
 }
 
@@ -55,7 +54,7 @@ html, body{
     height: 80%; 
     display: flex;
     align-items: center; 
-    /* border: 1px solid rgb(226, 205, 43); */
+    border: 1px solid rgb(226, 205, 43);
 }
 
 
@@ -84,31 +83,33 @@ html, body{
 }
 
 .inferior-esquerdo {
-    width: 70%;
-    margin: 2em auto;
-
+    height: 20%;
+    
 }
 
 .texto-aviso{
+    
     background-image: url(../IMG/icon-note.svg);
     background-size: 12px;
     background-repeat: no-repeat;
-    background-position: 16px;
+    background-position: 20%;
     padding-left: 30px;
     font-size: 12px;
 }
 
+.texto-aviso p {
+    margin-left: 19%;
+}
+
 .div-boton-esquerdo {
-    display: flex;
-    justify-content: space-between;
-    
+    text-align: center;
 }
 
 .botao {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 1em;
-    width: 278px;
+    margin-top: 1.5em;
+    width: 300px;
     height: 3.5em;
     border: 1px solid #0A3871;
     border-radius: 1em;
@@ -125,13 +126,14 @@ html, body{
 .botao-codificador{
     background: #0A3871;
     color: white;
+    margin-right: 5%;
 }
 
 .botao-codificador:hover{
     background: #032957;
 }
 
-.parte-direita {
+.parte-direita { 
     width: 27%;
     height: 100%;
     background: white;
