@@ -25,34 +25,36 @@ function textareaResult(){
 
 
 function codifica() {
-    ativarResultado();
     var texto = document.querySelector(".textarea-texto").value;
-    var resultado = document.querySelector(".texto-resultado");
-
-    texto = texto.replaceAll("e","enter");
-    texto = texto.replaceAll("i","imes");
-    texto = texto.replaceAll("a","ai");
-    texto = texto.replaceAll("o","ober");
-    texto = texto.replaceAll("u","ufat");
-    
-    resultado.value = texto;
-    textareaResult();
+    if (texto != ""){
+        ativarResultado();
+        var resultado = document.querySelector(".texto-resultado");
+        texto = texto.replaceAll("e","enter");
+        texto = texto.replaceAll("i","imes");
+        texto = texto.replaceAll("a","ai");
+        texto = texto.replaceAll("o","ober");
+        texto = texto.replaceAll("u","ufat");
+        
+        resultado.value = texto;
+        textareaResult();
+    }
 }
 
 function decodifica() {
-    ativarResultado();
     var texto = document.querySelector(".textarea-texto").value;
-    var resultado = document.querySelector(".texto-resultado");
+    if (texto != ""){
+        ativarResultado();
+        var resultado = document.querySelector(".texto-resultado");
 
-    texto = texto.replaceAll("ufat","u");
-    texto = texto.replaceAll("ober","o");
-    texto = texto.replaceAll("ai","a");
-    texto = texto.replaceAll("imes","i");
-    texto = texto.replaceAll("enter","e");
- 
-    resultado.value = texto;
-    textareaResult();
-
+        texto = texto.replaceAll("ufat","u");
+        texto = texto.replaceAll("ober","o");
+        texto = texto.replaceAll("ai","a");
+        texto = texto.replaceAll("imes","i");
+        texto = texto.replaceAll("enter","e");
+    
+        resultado.value = texto;
+        textareaResult();
+    }
 }
 
 function copiar() {
