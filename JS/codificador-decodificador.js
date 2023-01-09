@@ -74,7 +74,6 @@ function copiar() {
     textoCopiado.select();
     textoCopiado.setSelectionRange(0, 99999999)
     navigator.clipboard.writeText(textoCopiado.value);
-    alert(textoCopiado.value);
 
 }
 
