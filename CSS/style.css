@@ -249,6 +249,7 @@ footer p {
         width: 100%;
         height: auto;
         margin-top: 70px;
+        display: block;
     }
 
     .imagem-direita {
