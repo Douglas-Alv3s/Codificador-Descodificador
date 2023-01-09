@@ -15,14 +15,14 @@
 
     <body>
         <main class="estilo-pagina">
-            <section class="parte-esquerda">
+            <container class="parte-esquerda">
                 <header>
                     <div class="cabecalho-esquerdo">
                         <img src="IMG/alura-logo.svg" class="imagem-logo">
                     </div>
                 </header>
 
-                <section class="xesque-esquerdo">
+                <container class="xesque-esquerdo">
                     <div class="principal-esquerdo">
                         <div class="texto-esquerdo">
                             <textarea  class="textarea-texto" placeholder="Digite seu texto..."></textarea>
@@ -33,15 +33,15 @@
                                 <p>Apenas letras minúsculas e sem acento.</p>
                             </div>
                             <div class="div-boton-esquerdo">
-                                <button class="botao botao-codificador" id="codificador" onclick="codifica()">Codificador</button>
-                                <button class="botao" id="decodificador" onclick="decodifica()">Decodificador</button>
+                                <button class="botao botao-codificador" id="codificador" onclick="codifica()">Criptografar</button>
+                                <button class="botao" id="decodificador" onclick="decodifica()">Descriptografar</button>
                             </div>
                         </div>
                     </div>
-                </section>
-            </section>
+                </container>
+            </container>
 
-            <section class="parte-direita" >
+            <container class="parte-direita" >
                 <div class="xesque-direito">
                     <div class="conteudo-direito">
                         <img src="IMG/img-no-msg.svg" class="imagem-direita">
@@ -55,7 +55,12 @@
                         <button class="botao botao-copiar" id="copiador" onclick="copiar()">Copiar</button>
                     </div>
                 </div>
-            </section>
+            </container>
         </main>
+        <footer>
+            <p>Douglas Alves da Silva</p>
+            <a href="https://github.com/Douglas-Alv3s"><img src="IMG/GitHub-branco.png" class="img-footer"></a>
+            <a href="https://www.linkedin.com/in/douglas-alves-dev/"><img src="IMG/LinkedIn-branco.png" class="img-footer"></a>
+        </footer>
     </body>
 </html>

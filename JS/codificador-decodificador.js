@@ -25,35 +25,47 @@ function textareaResult(){
 
 
 function codifica() {
-    var texto = document.querySelector(".textarea-texto").value;
-    if (texto != ""){
+    var texto = document.querySelector(".textarea-texto");
+    var textoConvert = texto.value.toLowerCase();
+    if (textoConvert != ""){
         ativarResultado();
         var resultado = document.querySelector(".texto-resultado");
-        texto = texto.replaceAll("e","enter");
-        texto = texto.replaceAll("i","imes");
-        texto = texto.replaceAll("a","ai");
-        texto = texto.replaceAll("o","ober");
-        texto = texto.replaceAll("u","ufat");
+        textoConvert = textoConvert.replaceAll("e","enter");
+        textoConvert = textoConvert.replaceAll("i","imes");
+        textoConvert = textoConvert.replaceAll("a","ai");
+        textoConvert = textoConvert.replaceAll("o","ober");
+        textoConvert = textoConvert.replaceAll("u","ufat");
         
-        resultado.value = texto;
+        resultado.value = textoConvert;
         textareaResult();
+        texto.addEventListener("focus", ()=>{
+            texto.value ="";
+        }); 
+    } else {
+        texto.focus();
     }
 }
 
 function decodifica() {
-    var texto = document.querySelector(".textarea-texto").value;
-    if (texto != ""){
+    var texto = document.querySelector(".textarea-texto");
+    var textoConvert = texto.value.toLowerCase();
+    if (textoConvert != ""){
         ativarResultado();
         var resultado = document.querySelector(".texto-resultado");
 
-        texto = texto.replaceAll("ufat","u");
-        texto = texto.replaceAll("ober","o");
-        texto = texto.replaceAll("ai","a");
-        texto = texto.replaceAll("imes","i");
-        texto = texto.replaceAll("enter","e");
+        textoConvert = textoConvert.replaceAll("ufat","u");
+        textoConvert = textoConvert.replaceAll("ober","o");
+        textoConvert = textoConvert.replaceAll("ai","a");
+        textoConvert = textoConvert.replaceAll("imes","i");
+        textoConvert = textoConvert.replaceAll("enter","e");
     
-        resultado.value = texto;
+        resultado.value = textoConvert;
         textareaResult();
+        texto.addEventListener("focus", ()=>{
+            texto.value ="";
+        }); 
+    } else {
+        texto.focus();
     }
 }
 
