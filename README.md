@@ -19,7 +19,7 @@ See on Github Page [Challenge Decodificador](https://douglas-alv3s.github.io/Cod
 
 ## Autores
 Douglas Alves da Silva
-[Meu linkedIn](https://www.linkedin.com/in/jorge-luiz-dev/)
+[Meu linkedIn](https://www.linkedin.com/in/douglas-alves-dev/)
 
 ### Licença
 Não há licença. sinta-se livre para copiar e colar como quiser.
